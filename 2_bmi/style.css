@@ -1,0 +1,17 @@
+span{
+    display: block;
+}
+.container{
+    margin: 100px 200px 100px;
+}
+
+button{
+    padding: 5px;
+    margin: 2em;
+}
+
+#results{
+    font-size: large;
+    font-weight: bold;
+    padding-left: 20px;
+}
