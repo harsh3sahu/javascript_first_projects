@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async event</title>
+</head>
+
+<body style="background-color: #212121;color: #fff;">
+
+
+    <h1 id="content">aysnc event in JavaScript</h1>
+
+
+
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+
+
+
+</body>
+
+<script>
+
+    
+
+    const str= document.querySelector('#start');
+
+    const stp=document.querySelector('#stop');
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML="text changes successfully";
+        console.log("text changes successfully");
+    }
+    
+
+    str.addEventListener('click',function(){
+
+        const inter = setInterval(changeText,1000)
+
+        stp.addEventListener('click',function(){
+        clearInterval(inter);
+    })
+        
+    })
+
+    
+
+
+</script>
+
+</html>
