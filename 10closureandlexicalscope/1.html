@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;">
+    <button id="orange">orange</button>
+    <button id="blue">blue</button>
+</body>
+<script>
+
+    // 1--
+    function clickHandler(color){
+
+        return function(){
+            document.body.style.backgroundColor=`${color}`
+        }
+        
+
+    }
+
+
+    document.getElementById('orange').onclick= clickHandler("orange")
+    document.getElementById('blue').onclick=clickHandler("blue")
+
+// 2nd --
+//     function clickHandler(color){
+
+//         function fun1(){
+//             document.body.style.backgroundColor=`${color}`
+//         }
+//         fun1()
+
+// }
+
+
+// document.getElementById('orange').onclick= clickHandler("orange")
+// document.getElementById('blue').onclick=clickHandler("blue")
+
+
+</script>
+</html>
